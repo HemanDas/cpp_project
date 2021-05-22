@@ -12,7 +12,7 @@ int main(){
     int a,b;
 
             // Assignment operator are used to assign values to variables
-             int c=0; //here '=' is an assignment operator, other operands "=, += , -= , *= , /= %="
+             int c=0;                            //here '=' is an assignment operator, other operands "=, += , -= , *= , /= %="
 
 
     cout<<"Enter two number:"<<endl;
