@@ -5,10 +5,11 @@ struct student
 {
     char name[20],address[50];
     int roll;
-}s[3];
+};
 
 int main()
 {
+    student s[3];
     cout << "Enter information of students: " << endl;
 
     for(int i = 0; i < 3; ++i)
