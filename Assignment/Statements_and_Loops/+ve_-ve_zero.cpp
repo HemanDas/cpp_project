@@ -1,4 +1,5 @@
 #include <iostream>
+#include <conio.h>
 using namespace std;
 
 int main() {    
@@ -21,5 +22,6 @@ int main() {
     else {
         cout << "The Entered number is Zero" << endl;
     }
+    getch();
     return 0;
 }
