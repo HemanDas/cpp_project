@@ -24,7 +24,7 @@ class Simpleinterest
 int main()
 {
      Simpleinterest I;
-      float principle,rate1,time;
+      float principle,r,time;
       char decision;
         cout<<"Enter principle:";
         cin>>principle;
@@ -36,8 +36,8 @@ int main()
                 if(decision=='Y'|| decision=='y')
                 {
                     cout<<"enter rate";
-                    cin>>rate1;
-                    I.calcinterest(principle,time,rate1);
+                    cin>>r;
+                    I.calcinterest(principle,time,r);
                 }
 
 
