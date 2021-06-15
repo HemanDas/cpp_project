@@ -1,50 +1,36 @@
 #include<iostream>
 using namespace std;
 
-class Simpleinterest
-{
+class Simpleinterest{
     public:
-        float SI;
-        double calcinterest1(double principle, double time, double rate=0.15)
+        double I , Principle, Time , Rate ;
+        char a;
+        void input()
         {
-            SI=(principle*time*rate/100);
-            return 0;
+            cout<<"Enter Principal: "<<endl;
+            cin>>Principle;
+            cout<<"Enter time: "<<endl;
+            cin>>Time;
+            cout<<"Do you want to enter rate(y/n)"<<endl;
+            cin>>a;
+            if(a=='y'|| a=='Y')
+                {
+                    cout<<"Enter rate: "<<endl;
+                    cin>>Rate;
+                }else
+                {
+                    Rate=0.15;
+                }
         }
-        double calcinterest(double principle, double time, double r)
+        void output()
         {
-            SI=(principle*time*r/100);
-            return 0;
-        }
-        double interest()
-        {
-            cout<<"the simple interest is:"<<SI;
-            return SI;
+            I=(Principle*Time*Rate)/100;
+            cout<<"your intrest is: "<< I;
         }
 };
 int main()
 {
-     Simpleinterest I;
-      float principle,r,time;
-      char decision;
-        cout<<"Enter principle:";
-        cin>>principle;
-        cout<<"Enter time:";
-        cin>>time;
-        cout<<"Do you want to enter rate Y/N"<<endl;
-        cin>>decision;
-        
-                if(decision=='Y'|| decision=='y')
-                {
-                    cout<<"enter rate";
-                    cin>>r;
-                    I.calcinterest(principle,time,r);
-                }
-
-
-                else
-                {
-                    I.calcinterest1(principle,time);
-                }
-    I.interest();
+    Simpleinterest I;
+    I.input();
+    I.output();
 }
-
