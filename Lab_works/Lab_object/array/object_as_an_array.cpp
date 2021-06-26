@@ -27,3 +27,5 @@ int main(){
 
     }
 }
+//normal variable le value store garne kaam garxa
+//pointer variable le aaru variable ko address hold garxa sakxa
