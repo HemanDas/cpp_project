@@ -22,7 +22,7 @@ class group2{
            cout<<"Enter The second Number :"<<endl;
            cin>>num_2;
        }
-        float mean( group1 S1,group2 S2 ) 
+        float sum( group1 S1,group2 S2 ) 
       { 
              return (S1.num_1 +S2.num_2);
       }
@@ -32,6 +32,6 @@ int main(){
     group2 b,c;
     a.getdata();
     b.getdata();
-    cout<<"Addition of both Entered numbers is :"<<c.mean(a,b)<<endl;
+    cout<<"Addition of both Entered numbers is :"<<c.sum(a,b)<<endl;
 
 }
